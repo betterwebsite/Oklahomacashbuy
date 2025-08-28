@@ -13,18 +13,18 @@
 @media only screen and (min-width: 0rem) {
     /* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     :root {
-        --primary: #ff6a3e;
-        --primaryLight: #ffba43;
-        --secondary: #ffba43;
-        --secondaryLight: #ffba43;
-        --headerColor: #1a1a1a;
-        --bodyTextColor: #4e4b66;
-        --bodyTextColorWhite: #fafbfc;
+        --primary: #ff0012;         /* bright red */
+        --primaryLight: #ff4d5a;    /* lighter red tint */
+        --secondary: #001372;       /* dark blue */
+        --secondaryLight: #334099;  /* lighter navy */
+        --headerColor: #333333;     /* strong navy for headers */
+        --bodyTextColor: #333333;   /* dark gray for readability */
+        --bodyTextColorWhite: #ffffff;
 
         /* Dark Mode Styles */
-        --dark: #082032;
-        --medium: #2c394b;
-        --accent: #334756;
+        --dark: #0a0a0a;            /* near-black background */
+        --medium: #1a1a1a;          /* dark gray surface */
+        --accent: #ff0012;          /* red accent */
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -923,7 +923,7 @@
 
             img {
                 width: auto;
-                height: 100%;
+                height: 200%;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
             }
